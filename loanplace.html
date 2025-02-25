@@ -32,8 +32,13 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script>
 			$(function() {
-				var el = $("input#anytrack");
-				console.log(el.value);
+				setTimeout(() => {
+					var el = $("input#anytrack");
+					console.log(el.val());
+					var iframe = $("iframe.hs-form-iframe")[0]; // Get the iframe element
+					var inputField = $(iframe.contentWindow.document).find("input[name=anytrack_click_id]"); // Find the input field inside iframe
+					inputField.val(el.val());
+				}, 1000);
 			})
 
 		</script>
