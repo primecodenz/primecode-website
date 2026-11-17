@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Loanplace Automation Privacy Policy | PrimeCode</title>
+		<meta property="og:title" content="Loanplace Automation Privacy Policy | PrimeCode" />
+		<meta name="description" content="Privacy policy for the Loanplace Automation Chrome extension." />
+		<meta property="og:description" content="Privacy policy for the Loanplace Automation Chrome extension." />
+		<meta property="og:locale" content="en_NZ" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/png" href="../images/logo100x100.png" />
+		<style>
+			#privacy-policy h1.major {
+				font-size: 1.5rem;
+				max-width: 100%;
+			}
+
+			#privacy-policy h2 {
+				font-size: 1rem;
+				letter-spacing: 0.2rem;
+			}
+
+			body.is-article-visible #footer {
+				transform: none;
+				filter: none;
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body class="is-article-visible">
+		<div id="wrapper">
+			<main id="main">
+				<article id="privacy-policy" class="active">
+					<h1 class="major">Loanplace Automation Privacy Policy</h1>
+					<p>Effective date: November 17, 2026</p>
+					<h2>What the extension does</h2>
+					<p>Loanplace Automation helps authorized Loanplace staff copy information from a selected HubSpot deal into the current step of a loan application in a supported lender portal. The current version supports Avanti.</p>
+					<p>Staff review the populated fields, make any corrections, and submit the application themselves in the lender portal. The extension fills fields at the staff member’s request and leaves final submission to them.</p>
+					<h2>Who is responsible for your information</h2>
+					<p>Leander Fintech Limited, trading as Loanplace, is responsible for the staff and applicant information used in this workflow. Its business address is 86 Moorhouse Avenue, Addington, Christchurch 8011, New Zealand.</p>
+					<p>Primecode Limited builds, publishes, maintains, and operates the extension and its supporting service as Loanplace’s technology contractor. Primecode processes information on Loanplace’s behalf to provide those services.</p>
+					<h2>What information we use and why</h2>
+					<ul>
+						<li><strong>Staff sign-in.</strong> The extension uses the staff member’s Google Workspace email address, Workspace domain, and OAuth access token to verify their account and authorize deal lookups. It displays the signed-in email address in the side panel.</li>
+						<li><strong>Applicant and deal information.</strong> When staff click Fetch deal, the extension retrieves the selected deal from HubSpot through Loanplace’s deal lookup service. The information may include names, contact details, addresses, dates of birth, identification details, employment, income, expenses, liabilities, requested loan details, and application notes.</li>
+						<li><strong>Lender portal information.</strong> When staff click Fill the current step, the extension checks the active tab’s URL against its supported sites. With Chrome site access granted, it reads the form controls and relevant values to identify the current step and fill the matching fields. Avanti may save values as they are entered, and some steps may trigger portal validation or rate calculation. Final submission is a separate action taken by staff.</li>
+						<li><strong>Operational logs.</strong> The deal lookup service records operational logs to monitor the service and troubleshoot errors. These logs include the HubSpot deal ID in the request URL, request timestamps and identifiers, response status and timing, and browser or extension information. Logs may include IP addresses from the network connection or forwarding headers. Google OAuth tokens in the Authorization header are redacted. The standard request logs do not contain the applicant details returned by HubSpot. Logs are retained for 8 days.</li>
+					</ul>
+					<h2>Who receives the information</h2>
+					<p>Google provides staff sign-in and account verification. The deal lookup service verifies staff access and retrieves the selected deal from HubSpot. The extension displays the retrieved data to the staff member and enters the mapped values in Avanti when the staff member requests autofill. Primecode operates and supports the service on Loanplace’s behalf.</p>
+          <h2>Hosting and logging providers</h2>
+          <p>Heroku hosts the deal lookup service operated by Primecode Limited on Loanplace’s behalf. Heroku forwards application and request logs to Better Stack Logs for monitoring and troubleshooting. These logs may contain HubSpot deal IDs, IP addresses, request timestamps and identifiers, and browser or extension information. Raygun receives error reports to help diagnose backend failures.</p>
+					<h2>Storage and retention</h2>
+					<p>The extension keeps fetched deal data in memory while the side panel is open. It uses Chrome session storage for the staff member’s email address, Workspace domain, session expiry, and a fingerprint of the OAuth token. Signing out clears the extension’s sign-in session.</p>
+					<p>The deal lookup service retains operational logs for 8 days. Avanti manages information saved in its portal under its own retention practices.</p>
+					<h2>Access, correction, and questions</h2>
+					<p>You can ask to access or correct personal information that Loanplace holds about you. For privacy questions, requests, or complaints, contact Loanplace’s Privacy Officer at info@loanplace.co.nz or 86 Moorhouse Avenue, Addington, Christchurch 8011, New Zealand.</p>
+					<p>Loanplace will update this policy when the extension’s handling of personal information changes.</p>
+				</article>
+			</main>
+
+			<footer id="footer">
+				<p class="copyright">
+					&copy;<span id="year"></span> by PrimeCode Limited.<br />
+					Level 8, 139 Quay Street, Auckland, 1010 New Zealand<br />
+					Design: <a href="https://html5up.net">HTML5 UP</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+				</p>
+			</footer>
+		</div>
+
+		<div id="bg"></div>
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
