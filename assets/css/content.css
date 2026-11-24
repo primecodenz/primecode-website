@@ -1,0 +1,68 @@
+/* Content layout overrides for the PrimeCode homepage. */
+#header .content {
+    width: 48rem;
+}
+
+#header .content p {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+#header .content .brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+#header h1 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+#header .content .inner {
+    max-height: 60rem;
+}
+
+#header .actions {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#header .actions li {
+    padding: 0;
+}
+
+#header nav ul li a,
+.button {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 1rem;
+}
+
+#main h2.major {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+#main h3,
+#main h4 {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.button {
+    height: auto;
+    min-height: 2.75rem;
+    line-height: 1.5;
+    padding: 0.75rem 1rem;
+    white-space: normal;
+}
+
+@media screen and (max-width: 480px) {
+    #header .actions {
+        gap: 0;
+    }
+}
